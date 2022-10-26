@@ -1,0 +1,12 @@
+/* #19191b
+#2C2F33 
+#F6F6F6 */
+.Main{
+    display: flex;
+    background-color: #121111;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+    font-family: 'Dosis', sans-serif;
+}
+

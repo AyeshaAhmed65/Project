@@ -1,0 +1,218 @@
+.RegisterPage{
+    height: 100vh;
+    /* Amizone */
+    background-image: linear-gradient(rgb(10,78,149), rgb(253,182,2));
+    /* My Guy */
+    /* background-image: linear-gradient(rgb(22, 78, 131), rgb(225, 183, 78)); */
+    /* Dark */
+    /* background-image: linear-gradient(rgb(61, 61, 63), rgb(0, 0, 0)); */
+    display: flex;
+    justify-content: center;
+    padding-top: 13rem;
+    font-family: 'Dosis', sans-serif;
+}
+
+.Form{
+    
+    height: 50rem;
+    width: 70rem;
+    background-color: rgba(224, 232, 227, 0.808);
+    border-radius: 2rem;
+    padding-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+  transition: 0.5s ease;
+
+
+}
+
+.Form:hover{
+  box-shadow: 1px 5px 25px 10px rgb(255, 255, 255) inset;
+  transition: 0.5s ease;
+}
+
+
+      
+
+
+.inputContainer{
+	position:relative;
+	margin-bottom:2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.inputContainer label{
+    position:absolute;
+	top:1rem;
+	left:1rem;
+	font-size:16px;
+	color:rgb(32, 31, 31);	
+    pointer-events:none;
+	transition: all 0.2s ease-in-out;
+}
+.inputContainer input{ 
+    border:0;
+    border: 0.5px solid rgb(63, 63, 63);
+    background:rgba(230, 230, 230, 0.826);
+    border-radius: 1rem;
+    width:100%;
+    padding:1rem;
+    font-size:16px;
+    color:rgb(54, 53, 53);
+}
+.inputContainer input:focus{ 
+  border: 0.5px solid #07f;	
+    outline:none;
+    /* border-bottom:1px solid #72e73c;	 */
+    background:rgba(245, 244, 244, 0.862);
+   }
+
+.inputContainer input:focus ~ label{
+    top:-1.8rem;
+	font-size:1.4rem;
+	
+}
+
+.Nameinputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.header{
+    margin-left: 30%;
+    margin-top: 1.2rem;
+    margin-bottom: 3rem;
+    font-family: 'Monoton', cursive;
+    font-size: 4.5rem;
+}
+
+
+.SubmitButton {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  /* margin-top: 18rem; */
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 40%;
+  will-change: transform;
+
+}
+
+.SubmitButton:disabled {
+  pointer-events: none;
+}
+
+.SubmitButton:hover {
+  box-shadow: #07f 0 4px 10px;
+  transform: translateY(-2px);
+}
+
+.SubmitButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.spanDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.spanDiv span{
+    font-size: 1.3rem;
+}
+
+.hide{
+    display: none;
+}
+
+.FacultySelector{
+
+  position:absolute;
+  top: 3.4rem;
+  right: 2rem;
+}
+
+.FacultySelect select {
+  /* -webkit-appearance: none; */
+  padding: 7px 40px 7px 12px;
+  width: 100%;
+  
+  border: 1px solid #e8eaed;
+  border-radius: 5px;
+  background: rgb(32, 31, 31);
+  box-shadow: 0 1px 3px -2px #9098a9;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 150ms ease;
+  color: #d5d8e0;
+}
+
+.FacultySelect select:required:invalid {
+  color: #d5d8e0;
+}
+.FacultySelect select option {
+  color: #d5d8e0;
+}
+.FacultySelect select option[value=""][disabled] {
+  display: none;
+}
+.FacultySelect select:focus {
+  outline: none;
+  border-color: #07f;
+  box-shadow: 0 0 0 2px rgba(0,119,255,0.2);
+}
+
+.svgs{
+display: flex;
+justify-content: center;
+margin-top: 1.3rem;
+}
+
+.svgs svg{
+   margin-left: 1rem; 
+   margin-right: 1rem;
+   transition: 0.5s ease;
+}
+
+.amityLogo{
+    position: absolute;
+    left: 4rem;
+    bottom:0rem;
+}
+
+.svgs svg:hover{
+  width: 60px;
+  height: 60px;
+  transition: 0.2s ease;
+}
+

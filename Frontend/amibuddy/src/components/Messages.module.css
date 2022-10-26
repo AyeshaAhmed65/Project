@@ -1,0 +1,56 @@
+.messagesHolder{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.messageContainerLeft{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+}
+
+.messageContainerRight{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.yourMessage{
+
+    color: aliceblue;
+    font-size: 2rem;
+    margin-right: 2.5rem;
+    background-color: rgba(240, 240, 13, 0.26);
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 50rem;
+    overflow-wrap: break-word;
+    margin-left: 5rem;
+}
+
+.theirMessage{
+
+    color: aliceblue;
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    background-color: rgba(40, 187, 179, 0.352);
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 50rem;
+    overflow-wrap: break-word;
+    margin-right: 5rem;
+    
+}
+
+.textFirst{
+    width: 100%;
+    height: 100%;
+    color: rgb(65, 69, 76);
+    font-size: 4rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}

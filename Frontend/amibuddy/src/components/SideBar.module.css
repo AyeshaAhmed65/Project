@@ -1,0 +1,183 @@
+.SideBar{
+    background-color: #2F3137;
+    width: 45rem;
+    border-right:0.1px solid rgb(155, 155, 155);
+    flex :1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header{
+    display: flex;
+    flex:1;
+    width: 100%;
+    background-color: rgb(32,34,38);
+    padding-top: 2rem;
+    padding-left: 2rem;
+    color: rgb(192, 203, 213);
+    border-bottom: 1px solid rgb(155, 155, 155);
+    
+}
+.container{
+  flex: 7.7;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+
+.userImage{
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    cursor: pointer;
+    margin-left: 2rem;
+    object-fit: cover;
+}
+
+
+.findUsersButton {
+    display: flex;
+    width: 100%;
+    
+    box-shadow: rgba(0, 0, 0, 0.1) 4px 4px;
+  }
+
+.findUsersButton button {
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+    padding:
+      calc(1rem / 1.125)
+      1rem
+      1rem;
+    border: 0.125rem solid black;
+    color: black;
+    background-color: rgb(149, 149, 63);
+    font-size: 1.5rem;
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px;
+    transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  
+  .findUsersButton button + button {
+    border-left: 0.125rem solid black;
+    margin-left: calc(0.125rem * -1);
+  }
+  
+  .findUsersButton button:hover,
+  .findUsersButton button:focus {
+    flex-grow: 2;
+    color: white;
+    outline: none;
+    text-shadow: none;
+    background-color: rgb(2, 72, 102);
+    transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    color: white;
+  }
+  
+  .findUsersButton:hover button:focus:not(:hover) {
+    flex-grow: 1;
+    color: black;
+    background-color: white;
+    outline-color: dodgerblue;
+  }
+  
+  .findUsersButton button:active {
+    transform: translateY(0.125rem);
+  }
+  .recentChat{
+    margin-top: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    color: rgb(178, 187, 195);
+    font-size: 0.8rem;
+  }
+  .container::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+  .container::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+   
+  .container::-webkit-scrollbar-thumb {
+    background: #666; 
+  }
+
+  .recentChat h1{
+
+    align-self: center;
+  }
+
+  .recentChatBox{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    /* justify-content:baseline;
+    align-items:flex-start; */
+    color: rgb(178, 187, 195);
+    font-size: 0.8rem;
+    background-color: #2b2d33;
+    padding: 2rem;
+  }
+
+  .recentChatBox:hover{
+    background-color: #3f424a;
+   cursor: pointer;
+  }
+
+  .name{
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+  }
+
+  .textHolder{
+    
+  }
+  .textHolder h1,h2{
+    margin-left: 3rem;
+    }
+
+.textHolder h2{
+    margin-top: 0.5rem;
+    color: rgb(99, 104, 116);
+}
+
+.settingstr{
+  z-index: 5;
+    height: 3.5rem;
+    width: 3.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.settingstl{
+  z-index: 5;
+    height: 3.5rem;
+    width: 3.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.settingsbl{
+  z-index: 5;
+    height: 3.5rem;
+    width: 3.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.settingsbr{
+  z-index: 5;
+    height: 3.5rem;
+    width: 3.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+

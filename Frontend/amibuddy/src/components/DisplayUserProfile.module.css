@@ -1,0 +1,164 @@
+@keyframes createBox {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes closeBox {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0);
+    }
+  }
+
+  .close{
+    animation: closeBox .15s;
+  }
+
+.holder{
+    position: absolute;
+    left: 3rem;
+    right: 3rem;
+    top: 3rem;
+    bottom: 3rem;
+    background-color: rgb(38, 38, 41);
+    z-index: 2;
+    
+}
+
+.open{
+    animation: createBox .15s;
+}
+
+.closeMenu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 6rem;
+    width: 6rem;
+    cursor: pointer;
+}
+.settingstl{
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.settingsbl{
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.settingsbr{
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.inside{
+    display: flex;
+    padding: 5rem;
+    
+}
+
+.inside img{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.txt{
+    margin-left: 10rem;
+}
+
+.txt h1{
+    margin-top: 2rem;
+    color: white;
+    text-align:left;
+    font-size: 2rem;
+}
+
+.txt h2{
+    margin-top: 2rem;
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    margin-left: 0;
+}
+
+.txt h3{
+    margin-top: 2rem;
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.txt h4{
+    margin-top: 2rem;
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.messageButton{
+    margin-top: 4rem;
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  
+  }
+  .messageButton span{
+    position: relative;
+    
+    z-index: 2;
+  }
+  
+  .messageButton:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+
+    background: rgb(45, 47, 60);
+    transition: all .35s;
+  }
+  
+  .messageButton:hover{
+    color: #fff;
+  }
+  
+  .messageButton:hover:after{
+    width: 100%;
+  }
+
+  .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
